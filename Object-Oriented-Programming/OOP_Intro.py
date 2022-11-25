@@ -34,6 +34,7 @@ class knight(Character):
         self.print_basics()
         print("Armour:      ", self.armour)
 
+#Example of object (James)
 print("James = Character()")
 James = Character()
 James.name = "James Abela"
@@ -41,11 +42,13 @@ James.attack = "N/A"
 James.defence = "N/A"
 James.health = "N/A"
 James.experience = "N/A"
-James.description = "Teacher that teaches Object-Oriented Programming for a living. yawn..."
+James.description = "Teacher that teaches Object-Oriented Programming for a living."
 
 James.print_basics()
 James.print_intro()
 print("")
+
+#Creates a wizard character
 print("Merlin = wizard()")
 Merlin = wizard()
 Merlin.magic = 9999
@@ -58,6 +61,8 @@ Merlin.description = "Old wise wizard who does everything to help people"
 
 Merlin.print_me()
 print("")
+
+#Creates a knight character
 print("Arthur = knight()")
 Arthur = knight()
 Arthur.armour = 200
