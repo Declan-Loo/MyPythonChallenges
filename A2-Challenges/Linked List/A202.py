@@ -1,12 +1,14 @@
 class Node:
+    #Initialise the node (data/next pointer which points to the next node).
     def __init__(self, data):
         self.data = data
         self.next = None
 
 class LinkedList:
+     #Initialise Linked List heads
     def __init__(self):
         self.head = None
-
+    #Function to insert new nodes into linked list
     def insert(self, data):
         new_node = Node(data)
         if self.head:
@@ -16,7 +18,7 @@ class LinkedList:
             current.next = new_node
         else:
             self.head = new_node
-
+    #Function to find a particular data in the linked list
     def find(self, data):
         current = self.head
         while current is not None:
@@ -24,7 +26,7 @@ class LinkedList:
                 return current
             current = current.next
         return None
-
+    #Function to delete a node
     def delete(self, data):
         current = self.head
         previous = None
@@ -38,7 +40,7 @@ class LinkedList:
             previous = current
             current = current.next
         return False
-    
+    #Function to print the linked list
     def printList(self):
         current = self.head
         while(current):
