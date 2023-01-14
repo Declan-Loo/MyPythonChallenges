@@ -12,3 +12,5 @@ for i in range(number):
 
 for i in range(number):
   print(NameList[i],Comments[randint(0,19)])
+
+  #alternatively can do random.choice(Comments) as well.
