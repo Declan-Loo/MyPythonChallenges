@@ -1,3 +1,10 @@
+"""
+AS78	
+50	
+SMILE,SAD & SURPRISED	
+Create procedures to print ASCII art for a happy face, sad face & a surprised face.	
+"""
+
 #Task: Create procedures to print ASCII art for a happy face, sad face & a surprised face.	
 
 def happy_face():
