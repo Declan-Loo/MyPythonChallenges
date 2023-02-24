@@ -21,7 +21,7 @@ with open('CutestCatsSimple.txt','r') as f:
         cat_name = f.readline().strip()
         cat_desc = f.readline().strip()
         cat_weight = f.readline().strip()
-        cat_weight_list = cat_weight.strip(' ')
+        cat_weight_list = cat_weight.split(' ')
         total=0
         count = 0
         for i in cat_weight_list:
@@ -32,7 +32,7 @@ with open('CutestCatsSimple.txt','r') as f:
         total=0
         count = 0
         cat_length = f.readline().strip()
-        cat_length_list = cat_length.strip()
+        cat_length_list = cat_length.split()
         for i in cat_length_list:
             if i.isdigit():
                 total += int(i)
@@ -41,7 +41,7 @@ with open('CutestCatsSimple.txt','r') as f:
         total=0
         count = 0
         cat_lifeexp = f.readline().strip()
-        cat_lifeexp_list = cat_lifeexp.strip()
+        cat_lifeexp_list = cat_lifeexp.split()
         for i in cat_lifeexp_list:
             if i.isdigit():
                 total += int(i)
