@@ -1,15 +1,12 @@
-def BinarySearch(arr, num, low, high):
-    if low > high:
-        return False
-    else:
-        mid = (low + high)//2
+def BinarySearch2(arr, num):
+    low = 0
+    high = len(arr)-1
+    while low <= high:
+        mid = (low+high)//2
         if num == arr[mid]:
             return mid
         elif num > arr[mid]:
-            return BinarySearch(arr, num, mid+1, high)
+            low = mid + 1
         else:
-            return BinarySearch(arr, num, low, mid-1)
-        
-my_list = [2,3,5,5,5,6,4,22,1,3]
-
-print(BinarySearch(sorted(my_list), 22, 0, len(my_list)-1))
+            high = mid - 1
+    return False
